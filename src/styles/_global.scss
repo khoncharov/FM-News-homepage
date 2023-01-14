@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-basic;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: $font-size-p;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: $width-desktop;
+  margin-inline: auto;
+
+  @media screen and (max-width: $width-desktop) {
+    max-width: $width-mobile;
+  }
+}
