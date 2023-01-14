@@ -1,0 +1,17 @@
+.footer {
+  height: $footer-height;
+  padding-top: 5.5rem;
+
+  &__attribution {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      color: $very-dark-blue;
+    }
+
+    & a:hover {
+      color: $soft-red;
+    }
+  }
+}
