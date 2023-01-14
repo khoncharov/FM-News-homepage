@@ -9,6 +9,7 @@
 html {
   font-size: $font-size-basic;
   font-family: "Inter", sans-serif;
+  background-color: $off-white;
 }
 
 body {
@@ -39,4 +40,8 @@ img {
   @media screen and (max-width: $width-desktop) {
     max-width: $width-mobile;
   }
+}
+
+.text-default-p {
+  @include font(1.5rem, $dark-grayish-blue, 160%, $font-weight-regular);
 }
