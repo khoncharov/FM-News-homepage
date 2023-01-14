@@ -1,5 +1,6 @@
 .header {
   height: $header-height;
+  position: relative;
 
   @media screen and (max-width: $width-desktop) {
     height: $header-height-mobile;
@@ -39,6 +40,16 @@
     display: flex;
     align-items: center;
   }
+
+  &__menu-btn {
+    width: 4.5rem;
+    height: 2.8rem;
+    background-color: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 .menu {
@@ -58,11 +69,57 @@
   }
 }
 
-.menu-btn {
-  width: 4.5rem;
-  height: 2.8rem;
-  background-color: $off-white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.mobile-navigation {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(1px) brightness(0.6);
+  height: 0;
+  transition: $transition-x1;
+
+  @media screen and (max-width: $width-desktop) {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+
+    &_active {
+      height: 100vh;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25.6rem;
+    background-color: $off-white;
+    padding: 14.3rem 2.4rem 0 2.4rem;
+  }
+
+  &__close-btn {
+    background-color: inherit;
+    position: absolute;
+    top: 2.7rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  &__item {
+    margin-bottom: 2.1rem;
+  }
+
+  &__link {
+    display: block;
+    @include font(1.8rem, $very-dark-blue, 150%, $font-weight-medium);
+  }
 }
+
+/* 
+mobile-navigation_active
+mobile-navigation__container_visible
+*/
