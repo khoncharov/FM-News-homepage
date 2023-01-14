@@ -1,0 +1,31 @@
+/* Typography */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+$font-size-basic: 10px;
+
+$font-size-p: 1.5rem;
+$font-size-h1: 5.6rem;
+
+$font-weight-regular: 400;
+$font-weight-medium: 700;
+$font-weight-bold: 800;
+
+/* Layout */
+
+$width-mobile: 375px;
+$width-desktop: 1110px;
+
+/* Colors */
+
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+
+/* Transition time */
+
+$transition-x1: 0.2s;
