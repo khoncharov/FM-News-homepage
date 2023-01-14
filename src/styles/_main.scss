@@ -30,12 +30,14 @@
   &__top-title {
     grid-row: 2 / 4;
     grid-column: 1;
-    @include font(5.6rem, $very-dark-blue, 100%, $font-weight-medium);
+    padding-top: 0.5rem;
+    @include font(5.6rem, $very-dark-blue, 100%, $font-weight-bold);
   }
 
   &__text {
     grid-row: 2;
     grid-column: 2;
+    height: 10.3rem;
   }
 
   &__link-btn {
@@ -47,8 +49,8 @@
     max-width: max-content;
     text-transform: uppercase;
     background-color: $soft-red;
-    padding-inline: 3rem;
-    letter-spacing: 0.25rem;
+    padding-inline: 3.2rem;
+    letter-spacing: 0.35rem;
     transition: $transition-x1;
     @include font(1.5rem, $off-white, 150%, $font-weight-medium);
   }
@@ -70,7 +72,7 @@
 
   &-title {
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     height: 2.7rem;
     transition: $transition-x1;
     @include font(1.8rem, $very-dark-blue, 150%, $font-weight-bold);
@@ -81,11 +83,41 @@
   }
 
   &-text {
-    margin-top: 0.6rem;
+    margin-top: 0.8rem;
   }
 }
 
 .aside-bar {
+  padding-inline: 2.4rem;
   background-color: $very-dark-blue;
-  color: magenta;
+
+  &__card {
+    padding-block: 2.9rem;
+    border-bottom: 1px solid $dark-grayish-blue;
+  }
+
+  &__card:last-child {
+    border-bottom: none;
+  }
+
+  &__caption {
+    margin-top: 3.2rem;
+    @include font(4.1rem, $soft-orange, 100%, $font-weight-medium);
+  }
+
+  &__title {
+    margin-bottom: 0.6rem;
+    transition: $transition-x1;
+    letter-spacing: 0.02rem;
+    @include font(2rem, $off-white, 160%, $font-weight-medium);
+  }
+
+  &__card-inner:hover &__title {
+    color: $soft-orange;
+  }
+
+  &__text {
+    letter-spacing: 0.01rem;
+    @include font(1.5rem, $grayish-blue, 160%, $font-weight-regular);
+  }
 }
