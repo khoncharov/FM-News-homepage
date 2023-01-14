@@ -1,0 +1,32 @@
+.header {
+  height: $header-height;
+
+  &__container {
+    padding-top: 8.9rem;
+    max-width: $width-desktop;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__item {
+    padding-left: 3.6rem;
+  }
+
+  &__link {
+    transition: $transition-x1;
+    @include font(1.5rem, $dark-grayish-blue, 150%, $font-weight-medium);
+  }
+
+  &__link:hover {
+    color: $soft-red;
+  }
+}
