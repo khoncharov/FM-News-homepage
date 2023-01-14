@@ -2,12 +2,20 @@
   height: $footer-height;
   padding-top: 5.5rem;
 
+  @media screen and (max-width: $width-desktop) {
+    padding-top: 2.8rem;
+    height: $footer-height-mobile;
+    padding-inline: 1.6rem;
+  }
+
   &__attribution {
     display: flex;
     flex-direction: column;
 
     & a {
-      color: $very-dark-blue;
+      color: $dark-grayish-blue;
+      font-weight: $font-weight-medium;
+      transition: $transition-x1;
     }
 
     & a:hover {
