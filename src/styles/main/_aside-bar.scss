@@ -35,6 +35,10 @@
     }
   }
 
+  &__card-inner {
+    display: block;
+  }
+
   &__card-inner:hover &__title {
     color: $soft-orange;
   }
