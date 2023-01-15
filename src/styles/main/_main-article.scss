@@ -11,6 +11,7 @@
 
   &__img {
     grid-column: 1/-1;
+    height: 30rem;
 
     @media screen and (max-width: $width-desktop) {
       margin-bottom: 1.6rem;
