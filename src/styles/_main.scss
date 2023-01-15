@@ -1,19 +1,35 @@
 .main {
   min-height: calc(100vh - $header-height - $footer-height);
-  padding-bottom: 7.2rem;
+
+  @media screen and (max-width: $width-desktop) {
+    padding: 0 1.6rem;
+  }
 
   &__top-container {
-    margin-bottom: 7.2rem;
+    padding-bottom: 7.2rem;
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+    @media screen and (max-width: $width-desktop) {
+      display: block;
+      padding-bottom: 6.5rem;
+    }
   }
 
   &__bottom-container {
-    height: 12.7rem;
+    padding-bottom: 7.2rem;
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+    @media screen and (max-width: $width-desktop) {
+      padding-bottom: 6.5rem;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 3.4rem;
+    }
   }
 }
 
@@ -23,8 +39,17 @@
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
+  @media screen and (max-width: $width-desktop) {
+    display: block;
+    padding-bottom: 6.4rem;
+  }
+
   &__img {
     grid-column: 1/-1;
+
+    @media screen and (max-width: $width-desktop) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__top-title {
@@ -32,12 +57,22 @@
     grid-column: 1;
     padding-top: 0.5rem;
     @include font(5.6rem, $very-dark-blue, 100%, $font-weight-bold);
+
+    @media screen and (max-width: $width-desktop) {
+      margin-bottom: 1.6rem;
+      font-size: 4rem;
+    }
   }
 
   &__text {
     grid-row: 2;
     grid-column: 2;
     height: 10.3rem;
+
+    @media screen and (max-width: $width-desktop) {
+      margin-bottom: 2.4rem;
+      line-height: 170%;
+    }
   }
 
   &__link-btn {
@@ -88,21 +123,29 @@
 }
 
 .aside-bar {
-  padding-inline: 2.4rem;
+  padding: 3.2rem 2.4rem 0 2.4rem;
   background-color: $very-dark-blue;
 
+  @media screen and (max-width: $width-desktop) {
+    padding: 2.5rem 2.2rem 0 2.2rem;
+  }
+
   &__card {
-    padding-block: 2.9rem;
+    padding-block: 3rem 2.8rem;
     border-bottom: 1px solid $dark-grayish-blue;
   }
 
   &__card:last-child {
     border-bottom: none;
+    padding-bottom: 2.6rem;
   }
 
   &__caption {
-    margin-top: 3.2rem;
     @include font(4.1rem, $soft-orange, 100%, $font-weight-medium);
+
+    @media screen and (max-width: $width-desktop) {
+      font-size: 3.2rem;
+    }
   }
 
   &__title {
@@ -110,6 +153,10 @@
     transition: $transition-x1;
     letter-spacing: 0.02rem;
     @include font(2rem, $off-white, 160%, $font-weight-medium);
+
+    @media screen and (max-width: $width-desktop) {
+      letter-spacing: 0.01rem;
+    }
   }
 
   &__card-inner:hover &__title {
@@ -119,5 +166,9 @@
   &__text {
     letter-spacing: 0.01rem;
     @include font(1.5rem, $grayish-blue, 160%, $font-weight-regular);
+
+    @media screen and (max-width: $width-desktop) {
+      letter-spacing: 0;
+    }
   }
 }
