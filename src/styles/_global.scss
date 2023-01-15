@@ -33,6 +33,10 @@ img {
   object-fit: cover;
 }
 
+#app {
+  position: relative;
+}
+
 .container {
   max-width: $width-desktop;
   margin-inline: auto;

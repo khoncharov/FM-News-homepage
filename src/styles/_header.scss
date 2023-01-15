@@ -1,6 +1,5 @@
 .header {
   height: $header-height;
-  position: relative;
 
   @media screen and (max-width: $width-desktop) {
     height: $header-height-mobile;

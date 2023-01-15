@@ -46,34 +46,6 @@
             />
           </button>
         </div>
-        <nav class="mobile-navigation" id="mobile-navigation">
-          <div class="mobile-navigation__container mobile-navigation__container_visible">
-            <button
-              class="mobile-navigation__close-btn"
-              type="button"
-              id="btn-menu-close"
-            >
-              <img src="./assets/svg/icon-menu-close.svg" alt="Close button" />
-            </button>
-            <ul class="mobile-navigation__menu">
-              <li class="mobile-navigation__item">
-                <a href="#" class="mobile-navigation__link">Home</a>
-              </li>
-              <li class="mobile-navigation__item">
-                <a href="#" class="mobile-navigation__link">New</a>
-              </li>
-              <li class="mobile-navigation__item">
-                <a href="#" class="mobile-navigation__link">Popular</a>
-              </li>
-              <li class="mobile-navigation__item">
-                <a href="#" class="mobile-navigation__link">Trending</a>
-              </li>
-              <li class="mobile-navigation__item">
-                <a href="#" class="mobile-navigation__link">Categories</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
       </header>
 
       <main class="main container">
@@ -194,6 +166,30 @@
           </span>
         </div>
       </footer>
+
+      <div class="backdrop backdrop_hidden"></div>
+      <nav class="mobile-menu mobile-menu_hidden">
+        <button class="mobile-menu__close-btn" type="button" id="btn-menu-close">
+          <img src="./assets/svg/icon-menu-close.svg" alt="Close button" />
+        </button>
+        <ul class="mobile-menu__menu">
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">New</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Popular</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Trending</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Categories</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <script type="module" src="./src/main.ts"></script>
