@@ -20,8 +20,13 @@
 
     &_hidden {
       opacity: 0;
+      width: 0;
+      overflow: hidden;
+      /*
+        reminder: right: 0; width: 0;
+        without "overflow: hidden;" will cause page width overflow
+      */
       visibility: hidden;
-      left: 0;
     }
 
     &__close-btn {
