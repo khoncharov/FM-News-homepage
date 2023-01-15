@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  gap: 2.4rem;
+
+  &-num {
+    display: block;
+    height: 3rem;
+    @include font(3.2rem, $grayish-blue, 100%, $font-weight-bold);
+  }
+
+  &-title {
+    display: block;
+    margin-top: 1.2rem;
+    height: 2.7rem;
+    transition: $transition-x1;
+    @include font(1.8rem, $very-dark-blue, 150%, $font-weight-bold);
+  }
+
+  &:hover &-title {
+    color: $soft-red;
+  }
+
+  &-text {
+    margin-top: 0.8rem;
+  }
+}

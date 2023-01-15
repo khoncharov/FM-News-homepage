@@ -1,6 +1,12 @@
 @import "./styles/variables";
 @import "./styles/mixins";
 @import "./styles/global";
+
 @import "./styles/header";
-@import "./styles/main";
+
+@import "./styles/main/main";
+@import "./styles/main/top-article";
+@import "./styles/main/aside-bar";
+@import "./styles/main/card";
+
 @import "./styles/footer";
