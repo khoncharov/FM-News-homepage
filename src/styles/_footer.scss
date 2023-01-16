@@ -2,7 +2,7 @@
   height: $footer-height;
   padding-top: 5.5rem;
 
-  @media screen and (max-width: $width-desktop) {
+  @media screen and (max-width: $width-switch-point) {
     padding-top: 2.8rem;
     height: $footer-height-mobile;
     padding-inline: 1.6rem;

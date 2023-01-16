@@ -42,7 +42,7 @@ img {
   max-width: $width-desktop;
   margin-inline: auto;
 
-  @media screen and (max-width: $width-desktop) {
+  @media screen and (max-width: $width-switch-point) {
     max-width: $width-mobile;
   }
 }

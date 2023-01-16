@@ -6,7 +6,7 @@
   display: none;
 }
 
-@media screen and (max-width: $width-desktop) {
+@media screen and (max-width: $width-switch-point) {
   .mobile-menu {
     display: block;
     padding: 14.3rem 2.4rem;

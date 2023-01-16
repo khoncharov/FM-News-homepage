@@ -1,17 +1,17 @@
 .main {
   min-height: calc(100vh - $header-height - $footer-height);
 
-  @media screen and (max-width: $width-desktop) {
+  @media screen and (max-width: $width-switch-point) {
     padding: 0 1.6rem;
   }
 
   &__top-container {
     padding-bottom: 7.2rem;
     display: grid;
-    column-gap: min(2%, 3rem);
+    column-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
-    @media screen and (max-width: $width-desktop) {
+    @media screen and (max-width: $width-switch-point) {
       display: block;
       padding-bottom: 6.5rem;
     }
@@ -20,10 +20,10 @@
   &__bottom-container {
     padding-bottom: 7.2rem;
     display: grid;
-    gap: min(2%, 3rem);
+    column-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
-    @media screen and (max-width: $width-desktop) {
+    @media screen and (max-width: $width-switch-point) {
       padding-bottom: 6.5rem;
       height: max-content;
       display: flex;

@@ -25,9 +25,9 @@
     transition: $transition-x1;
     @include font(1.8rem, $very-dark-blue, 150%, $font-weight-bold);
 
-    @media screen and (max-width: $width-desktop) {
-      max-width: 20.2rem;
-      font-size: 1.5rem;
+    @media screen and (max-width: $width-switch-point) {
+      max-width: 21.9rem;
+      font-size: 1.8rem;
     }
   }
 
