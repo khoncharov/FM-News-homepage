@@ -26,17 +26,23 @@
 
   &__title {
     margin-bottom: 0.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 30.2rem;
+    text-overflow: ellipsis;
     transition: $transition-x1;
     letter-spacing: 0.02rem;
     @include font(2rem, $off-white, 160%, $font-weight-medium);
 
     @media screen and (max-width: $width-desktop) {
       letter-spacing: 0.01rem;
+      max-width: 30.1rem;
     }
   }
 
   &__card-inner {
     display: block;
+    overflow: hidden;
   }
 
   &__card-inner:hover &__title {
