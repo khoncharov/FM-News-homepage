@@ -1,0 +1,69 @@
+.header {
+  height: $header-height;
+
+  @media screen and (max-width: $width-switch-point) {
+    height: $header-height-mobile;
+    padding: 2.8rem 1.6rem;
+  }
+
+  &__container {
+    padding-top: 8.9rem;
+    max-width: $width-desktop;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $width-switch-point) {
+      display: none;
+    }
+  }
+
+  &__container-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $width-switch-point) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    height: 4rem;
+
+    @media screen and (max-width: $width-switch-point) {
+      height: 2.8rem;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    width: 4.5rem;
+    height: 2.8rem;
+    background: no-repeat center right url(./assets/svg/icon-menu.svg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__item {
+    padding-left: 4rem;
+  }
+
+  &__link {
+    transition: $transition-x1;
+    @include font(1.5rem, $dark-grayish-blue, 150%, $font-weight-medium);
+  }
+
+  &__link:hover {
+    color: $soft-red;
+  }
+}
