@@ -8,19 +8,19 @@ $font-weight-bold: 800;
 
 @font-face {
   font-family: "Inter";
-  src: url("../../public/fonts/static/Inter-Regular.ttf");
+  src: url("./fonts/static/Inter-Regular.ttf");
   font-weight: $font-weight-regular;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("../../public/fonts/static/Inter-Bold.ttf");
+  src: url("./fonts/static/Inter-Bold.ttf");
   font-weight: $font-weight-medium;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("../../public/fonts/static/Inter-ExtraBold.ttf");
+  src: url("./fonts/static/Inter-ExtraBold.ttf");
   font-weight: $font-weight-bold;
 }
 
