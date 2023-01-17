@@ -1,15 +1,31 @@
 /* Typography */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
-
 $font-size-basic: 10px;
-
-$font-size-p: 1.5rem;
-$font-size-h1: 5.6rem;
 
 $font-weight-regular: 400;
 $font-weight-medium: 700;
 $font-weight-bold: 800;
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: $font-weight-regular;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: $font-weight-medium;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: $font-weight-bold;
+}
+
+$font-size-p: 1.5rem;
+$font-size-h1: 5.6rem;
 
 /* Layout */
 

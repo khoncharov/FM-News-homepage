@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="./favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | News homepage</title>
   </head>
@@ -37,9 +37,40 @@
           <a href="./" class="header__logo">
             <img src="./assets/svg/logo.svg" alt="Site logo." width="45" height="28" />
           </a>
-          <button class="header__menu-btn" type="button" id="btn-menu-open"></button>
+          <button
+            class="header__menu-btn"
+            type="button"
+            id="btn-menu-open"
+            aria-label="Open navigation"
+          ></button>
         </div>
       </header>
+
+      <nav class="mobile-menu mobile-menu_hidden">
+        <button
+          class="mobile-menu__close-btn"
+          type="button"
+          id="btn-menu-close"
+          aria-label="Close navigation"
+        ></button>
+        <ul class="mobile-menu__menu">
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">New</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Popular</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Trending</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./" class="mobile-menu__link">Categories</a>
+          </li>
+        </ul>
+      </nav>
 
       <main class="main container">
         <section class="main__top-container">
@@ -107,7 +138,7 @@
               height="127"
             />
             <div class="card-content">
-              <span class="card-num">01</span>
+              <span class="card-num" aria-label="News number 1">01</span>
               <h3 class="card-title">Reviving Retro PCs</h3>
               <p class="card-text text-default-p">
                 What happens when old PCs are given modern upgrades?
@@ -122,7 +153,7 @@
               height="127"
             />
             <div class="card-content">
-              <span class="card-num">02</span>
+              <span class="card-num" aria-label="News number 2">02</span>
               <h3 class="card-title">Top 10 Laptops of 2022</h3>
               <p class="card-text text-default-p">
                 Our best picks for various needs and budgets.
@@ -137,7 +168,7 @@
               height="127"
             />
             <div class="card-content">
-              <span class="card-num">03</span>
+              <span class="card-num" aria-label="News number 3">03</span>
               <h3 class="card-title">The Growth of Gaming</h3>
               <p class="card-text text-default-p">
                 How the pandemic has sparked fresh opportunities.
@@ -149,43 +180,23 @@
 
       <footer class="footer container">
         <div class="footer__attribution">
-          <span class="text-default-p">
+          <p class="text-default-p">
             Challenge by:
             <a
               href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"
-              target="_blank"
+              title="Challenge page on The Frontend Mentor site."
             >
               Frontend Mentor
             </a>
-          </span>
-          <span class="text-default-p">
+          </p>
+          <p class="text-default-p">
             Coded by:
-            <a href="https://github.com/khoncharov" target="_blank"> Konstantin </a>
-          </span>
+            <a href="https://github.com/khoncharov" title="Github page">Konstantin</a>
+          </p>
         </div>
       </footer>
 
-      <div class="backdrop backdrop_hidden"></div>
-      <nav class="mobile-menu mobile-menu_hidden">
-        <button class="mobile-menu__close-btn" type="button" id="btn-menu-close"></button>
-        <ul class="mobile-menu__menu">
-          <li class="mobile-menu__item">
-            <a href="./" class="mobile-menu__link">Home</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="./" class="mobile-menu__link">New</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="./" class="mobile-menu__link">Popular</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="./" class="mobile-menu__link">Trending</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="./" class="mobile-menu__link">Categories</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="backdrop backdrop_hidden" aria-hidden="true"></div>
     </div>
 
     <script type="module" src="./src/main.ts"></script>
